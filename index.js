@@ -3,4 +3,5 @@ let coverPage = document.getElementById("cover");
 let startButton = document.getElementById("startbtn");
 startButton.addEventListener("click", () => {
   coverPage.classList.toggle("animate__slideOutUp");
+  
 });

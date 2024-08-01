@@ -11,14 +11,10 @@ body {
   height: 100%;
 }
 
-div.dialogue-box {
-  border: 2px solid red;
-  background-color: #9c7b7b;
-  height: 100%;
-}
+/* ===============COVER AND START BUTTON================================================== */
 
 div#cover {
-  border: 1em solid #645fca;
+  border: 0.1em solid #645fca;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -27,7 +23,7 @@ div#cover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom right, #ffffff60, #1d1a52f1),
+  background-image: linear-gradient(to bottom right, #ffffff60, #1d1a5275),
     url(images/pexels-breakingpic-3243.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -49,4 +45,61 @@ div#cover {
 #startbtn:hover {
   cursor: pointer;
   box-shadow: 0.2rem 0.2rem 0.3rem black;
+}
+/* ================================================================================================= */
+
+/* ==================DIALOGUE BOX===================================== */
+div.dialogue-box-container {
+  /* background-color: #470d4749; */
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)),
+    url(https://images.pexels.com/photos/1558690/pexels-photo-1558690.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+form {
+  padding: 1em 0.4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 0.3;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(253, 253, 253, 0.589);
+  background-color: #fff;
+}
+
+#form-header {
+  /* border: 2px solid red; */
+  margin-bottom: 1em;
+  margin-top: 0.2em;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+input {
+  width: 80%;
+  padding: 0.7rem;
+  margin-bottom: 2em;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #4943a5;
+  color: white;
+  border: 0px;
+  font-size: 1.3em;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.699);
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem 0.2rem black;
 }

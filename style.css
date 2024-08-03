@@ -20,7 +20,7 @@ div#cover {
   width: 100%;
   position: absolute;
   top: 0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to bottom right, #ffffff60, #1d1a5275),

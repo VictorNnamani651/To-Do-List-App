@@ -12,12 +12,12 @@
       rel="stylesheet"
     />
     <!-- ======================================================== -->
-    <!-- Font awesome icons link below!========================= -->
-    <script
-      src="https://kit.fontawesome.com/5fc8f83bf0.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- ========================================================== -->
+    <!-- font awesome 4.7 cdn link below======================strt -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- ==========================================================stp -->
     <title>Your Activities</title>
   </head>
   <body>
@@ -27,11 +27,33 @@
       </div>
       <div id="search-container">
         <div id="search-bar">
-          <i class="fas fa-search"></i>
+          <i class="fa fa-search"></i>
           <input type="text" placeholder="Search Tasks..." />
         </div>
         <button id="search-btn">Search</button>
       </div>
+      <div id="tasks">
+        <div id="task0">
+          <div class="title-a">
+            <div id="firstHalf">
+              <!-- <i class="fa fa-check-square-o" id="done"></i> -->
+              <i class="fa fa-square-o" id="checkBox"></i>
+              <div class="task-title">Task Title</div>
+            </div>
+            <div id="secondHalf">
+              <div class="task-due-date">08/05/2024</div>
+              <button class="desc-btn">
+                <i class="fa fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description-a">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
+            modi nemo a ipsam maxime et voluptatem iusto nulla vel.
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="userPage.js"></script>
   </body>
 </html>

@@ -32,6 +32,7 @@ body {
   display: flex;
   width: fit-content;
   margin: 0 auto;
+  margin-bottom: 5vh;
 }
 
 #search-bar {
@@ -53,7 +54,7 @@ i.fa-search {
   padding: 0em 0.5em;
   color: #675df581;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 #search-bar input[type="text"] {
@@ -88,4 +89,66 @@ i.fa-search {
 #search-btn:hover {
   cursor: pointer;
   box-shadow: 0.2em 0.2em 0.1em rgba(0, 0, 0, 0.26);
+}
+
+#tasks {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#task0 {
+  box-shadow: 0.2em 0.2em 0.9em rgba(0, 0, 0, 0.26);
+}
+
+div.title-a {
+  margin-bottom: 2%;
+  padding: 1em 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #867ef7;
+}
+
+div#firstHalf,
+#secondHalf {
+  display: flex;
+  color: white;
+}
+
+#firstHalf {
+  align-items: center;
+  justify-content: baseline;
+}
+
+#secondHalf {
+  align-items: flex-end;
+  justify-content: baseline;
+  align-self: flex-end;
+}
+
+#firstHalf .task-title {
+  font-size: 1.5rem;
+  padding: 0em 1em;
+  font-weight: 500;
+}
+
+#firstHalf i {
+  font-size: 2rem;
+}
+
+.description-a {
+  padding: 0% 2%;
+  padding-bottom: 3%;
+}
+
+#secondHalf .task-due-date {
+  padding: 0em 1em;
+}
+
+#secondHalf button {
+  color: #867ef7;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 45%;
+  padding: 0.4em;
 }

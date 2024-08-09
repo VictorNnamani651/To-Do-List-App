@@ -15,7 +15,7 @@ checkBox.addEventListener("click", () => {
 
 // description button logic========================================
 let descriptionButton = document.getElementsByClassName("desc-btn")[0];
-let descriptionIcon = document.getElementById("desc-icon");
+let descriptionIcon = document.getElementsByClassName("desc-icon")[0];
 let descriptionDiv = document.getElementsByClassName("description-a")[0];
 
 // function to check the state of description icon(to know if the icon is facing down or up)================
@@ -55,9 +55,17 @@ function hide_or_show_description() {
 }
 // ==========================================================================================================
 
-// the code below is to add a trigger for the  check_description_icon_state function and the  hide_or_show_description function to the description button==
+// the code below is to add a trigger for the  change_description_icon function and the hide_or_show_description function to the description button==
 descriptionButton.addEventListener("click", () => {
   change_description_icon();
   hide_or_show_description();
 });
 // ================================================================================
+
+// // Add_task button logic==============================================
+// let add_task_button = document.getElementById("add_task");
+// let new_task_div = document.createElement
+
+// function create_new_task(){
+  
+// }

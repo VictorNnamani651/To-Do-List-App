@@ -116,34 +116,34 @@ div.title-a {
   background-color: #867ef7;
 }
 
-div#firstHalf,
-#secondHalf {
+div.firstHalf,
+.secondHalf {
   display: flex;
   color: white;
 }
 
-#firstHalf {
+.firstHalf {
   align-items: center;
   justify-content: baseline;
 }
 
-#secondHalf {
+.secondHalf {
   align-items: flex-end;
   justify-content: baseline;
   align-self: flex-end;
 }
 
-#firstHalf .task-title {
+.firstHalf .task-title {
   font-size: 1.5rem;
   padding: 0em 1em;
   font-weight: 500;
 }
 
-#firstHalf i {
+.firstHalf i {
   font-size: 2rem;
 }
 
-#firstHalf i:hover {
+.firstHalf i:hover {
   cursor: pointer;
   /* color: #463af0; */
 }
@@ -154,11 +154,11 @@ div#firstHalf,
   margin-bottom: 4%;
 }
 
-#secondHalf .task-due-date {
+.secondHalf .task-due-date {
   padding: 0em 1em;
 }
 
-#secondHalf .desc-btn {
+.secondHalf .desc-btn {
   color: #867ef7;
   background-color: #fff;
   border: 0px;

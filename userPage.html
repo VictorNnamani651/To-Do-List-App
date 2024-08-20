@@ -48,13 +48,16 @@
         <!-- list of tasks============================================================start -->
         <div class="task">
           <div class="title-a">
-            <div id="firstHalf">
-              <i class="fa fa-square-o" id="checkBox"></i>
+            <div class="firstHalf">
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
               <div class="task-title">Task Title</div>
             </div>
-            <div id="secondHalf">
+            <div class="secondHalf">
               <div class="task-due-date">08/05/2024</div>
-              <button class="desc-btn">
+              <button class="desc-btn" onclick="description_state(this)">
                 <i class="fa fa-chevron-down desc-icon"></i>
               </button>
             </div>

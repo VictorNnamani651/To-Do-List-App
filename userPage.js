@@ -1,5 +1,5 @@
-// check button logic ==================================================
-// Function for the checkBox icon to enable it change state on click
+// "checkBox" logic ==================================================
+// Function for the checkBox icon to enable it change state when clicked
 function change_icon_state(elem) {
   if (elem.classList.contains("fa-square-o")) {
     elem.classList.remove("fa-square-o");
@@ -11,7 +11,7 @@ function change_icon_state(elem) {
 }
 // ===================================================================
 
-// function to check the state of description drop-down icon(to know if the icon is facing down or up)=================================================
+// function to check the state of description drop-down icon(to know if the icon arrow is facing down or up)=================================================
 function check_description_icon_state(elem) {
   if (elem.querySelector(".desc-icon").classList.contains("fa-chevron-up")) {
     return true;
@@ -64,6 +64,8 @@ function description_state(elem) {
 // // Code to add a new task to the app via the DOM=======================================================
 let add_task_button = document.getElementById("add_task");
 
+add_task_button;
+
 let new_task;
 add_task_button.addEventListener("click", () => {
   new_task = document.createElement("div");
@@ -71,13 +73,24 @@ add_task_button.addEventListener("click", () => {
   new_task.innerHTML = `<div class="task">
           <div class="title-a">
             <div class="firstHalf">
-              <i class="fa fa-square-o checkBox" onclick="change_icon_state(this)"></i>
-              <div class="task-title">Task Title</div>
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
+              <div class="task-title">
+                Task Title
+                <div class="task-due-date">08/05/2024</div>
+              </div>
             </div>
             <div class="secondHalf">
-              <div class="task-due-date">08/05/2024</div>
-              <button class="desc-btn" onclick="description_state(this)">
+              <button class="desc-btn ft-btn" onclick="description_state(this)">
                 <i class="fa fa-chevron-down desc-icon"></i>
+              </button>
+              <button class="ft-btn delete_btn">
+                <i class="fa fa-trash"></i>
+              </button>
+              <button class="ft-btn edit_btn">
+                <i class="fa fa-edit"></i>
               </button>
             </div>
           </div>

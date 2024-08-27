@@ -100,4 +100,5 @@ add_task_button.addEventListener("click", () => {
           </div>
         </div>`;
   document.getElementById("tasks").appendChild(new_task);
+  
 });

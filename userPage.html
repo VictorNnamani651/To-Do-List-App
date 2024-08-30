@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link below=========================== -->
     <link rel="stylesheet" href="userPage.css" />
     <!-- GOOGLE FONTS LINK BELOW!============================ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,7 +47,7 @@
       </div>
       <div id="tasks">
         <!-- the code below is a hard-coded version of what an added task should look like -->
-        <div class="task">
+        <!-- <div class="task">
           <div class="title-a">
             <div class="firstHalf">
               <i
@@ -54,7 +55,7 @@
                 onclick="change_icon_state(this)"
               ></i>
               <div class="task-title">
-                Task Title
+                <p>Task Title</p>
                 <div class="task-due-date">08/05/2024</div>
               </div>
             </div>
@@ -74,16 +75,31 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
             modi nemo a ipsam maxime et voluptatem iusto nulla vel.
           </div>
-        </div>
+        </div> -->
         <!-- ================================================================================================================ -->
       </div>
       <button id="add_task">
         <span class="material-symbols-outlined"> add </span>
       </button>
     </div>
-    <div class="dialogue-box-container">
-      <div class="dialogue-box"></div>
+
+    <!-- DIALOGUE BOX TO TAKE USER INPUT TO FILL IN THE TASK DETAILS================= -->
+    <div class="dialogue-box-container hide">
+      <form action="">
+        <button id="close_dialogue_box_btn">x</button>
+        <p id="form-header">Task Details</p>
+        <input type="text" id="title" placeholder="Input Task Title" required />
+        <input type="date" id="date" required />
+        <input
+          type="text"
+          id="description"
+          placeholder="Add Description"
+          required
+        />
+        <input type="button" id="submit_details" value="Add Task" />
+      </form>
     </div>
     <script src="userPage.js"></script>
+    <script src="dialogue&newTaskLogic.js"></script>
   </body>
 </html>

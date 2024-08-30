@@ -14,9 +14,10 @@ body {
 body {
   overflow: hidden;
 }
+
 /* class to hide or display anything============================== */
 .hide {
-  display: none;
+  display: none !important;
 }
 /* ================================================== */
 
@@ -38,6 +39,7 @@ body {
 /* style for the search bar and search button======================================= */
 
 #search-container {
+  /* border: 1px solid red; */
   display: flex;
   width: fit-content;
   margin: 0 auto;
@@ -230,8 +232,9 @@ button#add_task:hover {
 }
 
 /* style for the dialogue box(to fill in task details) ============*/
-.dialogue-box-container {
-  border: 1px solid red;
+
+/* .dialogue-box-container {
+  border: 1px solid rgb(163, 75, 75);
   position: absolute;
   top: 50%;
   left: 5%;
@@ -241,6 +244,83 @@ button#add_task:hover {
 
 .dialogue-box {
   border: 1px solid green;
+} */
+
+/* ==================DIALOGUE BOX===================================== */
+.dialogue-box-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000000c7;
+}
+
+form {
+  /* border: 1px solid green; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 0.3;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(49, 29, 29, 0.589);
+  background-color: #fff;
+}
+
+#close_dialogue_box_btn {
+  padding: 0em 0.4em 0.2em;
+  background-color: #fff;
+  border: 0px;
+  color: white;
+  font-size: xx-large;
+  font-weight: lighter;
+  align-self: flex-end;
+  background-color: #4943a5;
+  transition: all 100ms ease-in-out;
+}
+
+#close_dialogue_box_btn:hover {
+  cursor: pointer;
+  color: #4943a5;
+  background-color: #ff00009a;
+}
+
+#form-header {
+  margin-bottom: 1em;
+  margin-top: 0.2em;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.dialogue-box-container input {
+  width: 80%;
+  padding: 0.7rem;
+  margin-bottom: 2em;
+  outline: none;
+}
+
+input[type="button"] {
+  background-color: #4943a5;
+  color: white;
+  border: 0px;
+  font-size: 1.3em;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.699);
+  outline: none;
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.76);
 }
 
 /* ===================================== */

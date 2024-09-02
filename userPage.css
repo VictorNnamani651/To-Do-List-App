@@ -205,7 +205,7 @@ div.firstHalf,
   background: #675df5;
 }
 
-/* style for the add task button============================= */
+/* style for the add task button========================================================================== */
 
 button#add_task {
   color: white;
@@ -226,12 +226,11 @@ button#add_task span {
 
 button#add_task:hover {
   cursor: pointer;
-  color: #675df5cb;
-  background-color: white;
-  border: 1px solid #675df5;
+  color: #5044ff;
+  background-color: #675df583;
 }
 
-/* style for the dialogue box(to fill in task details) ============*/
+/* style for the dialogue box(to fill in task details) =================================================================*/
 
 /* .dialogue-box-container {
   border: 1px solid rgb(163, 75, 75);

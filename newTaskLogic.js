@@ -22,7 +22,7 @@ function create_new_task() {
               <button class="desc-btn ft-btn" onclick="description_state(this)">
                 <i class="fa fa-chevron-down desc-icon"></i>
               </button>
-              <button class="ft-btn delete_btn">
+              <button class="ft-btn delete_btn" onclick="delete_task(this)">
                 <i class="fa fa-trash"></i>
               </button>
               <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">

@@ -66,7 +66,7 @@
               <button class="ft-btn delete_btn">
                 <i class="fa fa-trash"></i>
               </button>
-              <button class="ft-btn edit_btn">
+              <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">
                 <i class="fa fa-edit"></i>
               </button>
             </div>
@@ -88,7 +88,13 @@
       <form action="">
         <button id="close_dialogue_box_btn">x</button>
         <p id="form-header">Task Details</p>
-        <input type="text" id="title" placeholder="Input Task Title" required />
+        <input
+          type="text"
+          id="title"
+          name="task_title"
+          placeholder="Input Task Title"
+          required
+        />
         <input type="date" id="date" required />
         <input
           type="text"
@@ -100,6 +106,9 @@
       </form>
     </div>
     <script src="userPage.js"></script>
-    <script src="dialogue&newTaskLogic.js"></script>
+    <script src="newTaskLogic.js"></script>
+    <script src="dialogueBoxLogic.js"></script>
+    <script src="editTask.js"></script>
+    <script src="deleteTaskLogic.js"></script>
   </body>
 </html>

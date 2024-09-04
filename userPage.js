@@ -21,7 +21,7 @@ function check_description_icon_state(elem) {
   }
 }
 
-// function to change the description drop-down icon when the description button is clicked
+//This function to change the description drop-down icon when the description button is clicked
 // NOTE == True means the icon arrow is facing up & False means it is facing down==========================
 let up_or_down;
 function change_description_icon(elem) {
@@ -38,7 +38,7 @@ function change_description_icon(elem) {
   }
 }
 
-// function to hide or display the task description based on the state of the description drop-down icon(up for hide and down for display)=======
+// This function is to hide or display the task description ,based on the state of the description drop-down icon(up for hide and down for display)===========
 function hide_or_show_description(elem) {
   if (up_or_down == "up") {
     elem.parentElement.parentElement.parentElement
@@ -51,7 +51,7 @@ function hide_or_show_description(elem) {
   }
 }
 
-// the function below is to add a trigger for the  change_description_icon function and the hide_or_show_description function to the description button==============================
+// the function below is to add a trigger for the  "change_description_icon" function and the "hide_or_show_description" function to the description button (if you're looking for the function reference(where the function below is invoked), it's inside the description button element(as an attribute ['click'] value ['description_state(this)']))==============================
 function description_state(elem) {
   change_description_icon(elem);
   hide_or_show_description(elem);

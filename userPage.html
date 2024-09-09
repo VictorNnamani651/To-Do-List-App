@@ -46,7 +46,7 @@
         <button id="search-btn">Search</button>
       </div>
       <div id="tasks">
-        <!-- the code below is a hard-coded version of what an added task should look like -->
+        <!-- the code below is a hard-coded version of what an added task should look like ===========================================================================================-->
         <!-- <div class="task">
           <div class="title-a">
             <div class="firstHalf">
@@ -85,7 +85,7 @@
 
     <!-- DIALOGUE BOX TO TAKE USER INPUT TO FILL IN THE TASK DETAILS================= -->
     <div class="dialogue-box-container hide">
-      <form action="">
+      <form >
         <button id="close_dialogue_box_btn">x</button>
         <p id="form-header">Task Details</p>
         <input
@@ -93,13 +93,20 @@
           id="title"
           name="task_title"
           placeholder="Input Task Title"
+          onkeydown="check_input_spaces(event)"
           required
         />
-        <input type="date" id="date" required />
+        <input
+          type="date"
+          id="date"
+          onkeydown="check_input_spaces(event)"
+          required
+        />
         <input
           type="text"
           id="description"
           placeholder="Add Description"
+          onkeydown="check_input_spaces(event)"
           required
         />
         <input type="button" id="submit_details" value="Add Task" />

@@ -1,4 +1,4 @@
-// This function sets the input values within the dialgoue box (title,date & description) according to the details of the task that was clicked.
+// This function sets the value for the user inputs (title value,date value & description value) within the dialgoue box according to the details of the task that was clicked.
 function add_inputs_of_task_to_be_edited(elem) {
   task_title.value =
     elem.parentNode.parentNode.querySelector(".task-title p").innerText;
@@ -26,6 +26,7 @@ function edit(elem) {
   }
 }
 
+// the function below displays the dialogue box for user inputs {when the "edit" button for any task is clicked}
 function show_dialogue_box(elem) {
   toggle_dialogue_box_display_state();
   add_inputs_of_task_to_be_edited(elem);

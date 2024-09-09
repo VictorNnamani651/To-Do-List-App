@@ -33,3 +33,20 @@ let close_dialgue_box_button = document.querySelector(
 close_dialgue_box_button.addEventListener("click", () => {
   toggle_dialogue_box_display_state();
 });
+
+// function to check if all the input spaces have been filed (within the dialogue box) before submitting. [This function was created incase we use the enter key to submit the task info instead of the button on the screen]==============================================
+function check_input_spaces(event) {
+  if (
+    task_title.value.length > 0 &&
+    task_due_date.value.length > 0 &&
+    task_description.value.length > 0 &&
+    event.key === "Enter"
+  ) {
+    event.preventDefault();
+    create_new_task();
+    toggle_dialogue_box_display_state();
+    task_title.value = "";
+    task_due_date.value = "";
+    task_description.value = "";
+  }
+}

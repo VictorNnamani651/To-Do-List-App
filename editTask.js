@@ -13,7 +13,7 @@ function add_inputs_of_task_to_be_edited(elem) {
 
 // this function changes the text on the "add task" button(within the dialogue box) from "add task" to "Save changes"
 let add_task_button = document.querySelector("#submit_details");
-function change_submit_button_value(elem) {
+function change_submit_button_value() {
   add_task_button.value = "Save Changes";
 }
 

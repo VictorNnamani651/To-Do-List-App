@@ -50,8 +50,7 @@ function check_input_spaces(event) {
     event.key === "Enter"
   ) {
     event.preventDefault();
-    create_new_task();
-    toggle_dialogue_box_display_state();
+    add_task_button.click();
     empty_input_boxes();
   }
 }

@@ -41,13 +41,13 @@
       <div id="search-container">
         <div id="search-bar">
           <i class="fa fa-search"></i>
-          <input type="text" placeholder="Search Tasks..." />
+          <input type="text" id="search_bar" placeholder="Search Tasks..." />
         </div>
         <button id="search-btn">Search</button>
       </div>
       <div id="tasks">
         <!-- the code below is a hard-coded version of what an added task should look like ===========================================================================================-->
-        <!-- <div class="task">
+        <div class="task">
           <div class="title-a">
             <div class="firstHalf">
               <i
@@ -55,7 +55,7 @@
                 onclick="change_icon_state(this)"
               ></i>
               <div class="task-title">
-                <p>Task Title</p>
+                <p>Task Title 1</p>
                 <div class="task-due-date">08/05/2024</div>
               </div>
             </div>
@@ -75,7 +75,239 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
             modi nemo a ipsam maxime et voluptatem iusto nulla vel.
           </div>
-        </div> -->
+        </div>
+        <div class="task">
+          <div class="title-a">
+            <div class="firstHalf">
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
+              <div class="task-title">
+                <p>Task Title 2</p>
+                <div class="task-due-date">08/05/2024</div>
+              </div>
+            </div>
+            <div class="secondHalf">
+              <button class="desc-btn ft-btn" onclick="description_state(this)">
+                <i class="fa fa-chevron-down desc-icon"></i>
+              </button>
+              <button class="ft-btn delete_btn" onclick="delete_task(this)">
+                <i class="fa fa-trash"></i>
+              </button>
+              <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">
+                <i class="fa fa-edit"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description-a hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
+            modi nemo a ipsam maxime et voluptatem iusto nulla vel.
+          </div>
+        </div>
+        <div class="task">
+          <div class="title-a">
+            <div class="firstHalf">
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
+              <div class="task-title">
+                <p>Task Title 3</p>
+                <div class="task-due-date">08/05/2024</div>
+              </div>
+            </div>
+            <div class="secondHalf">
+              <button class="desc-btn ft-btn" onclick="description_state(this)">
+                <i class="fa fa-chevron-down desc-icon"></i>
+              </button>
+              <button class="ft-btn delete_btn" onclick="delete_task(this)">
+                <i class="fa fa-trash"></i>
+              </button>
+              <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">
+                <i class="fa fa-edit"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description-a hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
+            modi nemo a ipsam maxime et voluptatem iusto nulla vel.
+          </div>
+        </div>
+        <div class="task">
+          <div class="title-a">
+            <div class="firstHalf">
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
+              <div class="task-title">
+                <p>Task Title 4</p>
+                <div class="task-due-date">08/05/2024</div>
+              </div>
+            </div>
+            <div class="secondHalf">
+              <button class="desc-btn ft-btn" onclick="description_state(this)">
+                <i class="fa fa-chevron-down desc-icon"></i>
+              </button>
+              <button class="ft-btn delete_btn" onclick="delete_task(this)">
+                <i class="fa fa-trash"></i>
+              </button>
+              <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">
+                <i class="fa fa-edit"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description-a hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
+            modi nemo a ipsam maxime et voluptatem iusto nulla vel.
+          </div>
+        </div>
+        <div class="task">
+          <div class="title-a">
+            <div class="firstHalf">
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
+              <div class="task-title">
+                <p>Task Title 5</p>
+                <div class="task-due-date">08/05/2024</div>
+              </div>
+            </div>
+            <div class="secondHalf">
+              <button class="desc-btn ft-btn" onclick="description_state(this)">
+                <i class="fa fa-chevron-down desc-icon"></i>
+              </button>
+              <button class="ft-btn delete_btn" onclick="delete_task(this)">
+                <i class="fa fa-trash"></i>
+              </button>
+              <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">
+                <i class="fa fa-edit"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description-a hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
+            modi nemo a ipsam maxime et voluptatem iusto nulla vel.
+          </div>
+        </div>
+        <div class="task">
+          <div class="title-a">
+            <div class="firstHalf">
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
+              <div class="task-title">
+                <p>Task Title 6</p>
+                <div class="task-due-date">08/05/2024</div>
+              </div>
+            </div>
+            <div class="secondHalf">
+              <button class="desc-btn ft-btn" onclick="description_state(this)">
+                <i class="fa fa-chevron-down desc-icon"></i>
+              </button>
+              <button class="ft-btn delete_btn" onclick="delete_task(this)">
+                <i class="fa fa-trash"></i>
+              </button>
+              <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">
+                <i class="fa fa-edit"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description-a hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
+            modi nemo a ipsam maxime et voluptatem iusto nulla vel.
+          </div>
+        </div>
+        <div class="task">
+          <div class="title-a">
+            <div class="firstHalf">
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
+              <div class="task-title">
+                <p>Task Title 7</p>
+                <div class="task-due-date">08/05/2024</div>
+              </div>
+            </div>
+            <div class="secondHalf">
+              <button class="desc-btn ft-btn" onclick="description_state(this)">
+                <i class="fa fa-chevron-down desc-icon"></i>
+              </button>
+              <button class="ft-btn delete_btn" onclick="delete_task(this)">
+                <i class="fa fa-trash"></i>
+              </button>
+              <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">
+                <i class="fa fa-edit"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description-a hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
+            modi nemo a ipsam maxime et voluptatem iusto nulla vel.
+          </div>
+        </div>
+        <div class="task">
+          <div class="title-a">
+            <div class="firstHalf">
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
+              <div class="task-title">
+                <p>Task Title 8</p>
+                <div class="task-due-date">08/05/2024</div>
+              </div>
+            </div>
+            <div class="secondHalf">
+              <button class="desc-btn ft-btn" onclick="description_state(this)">
+                <i class="fa fa-chevron-down desc-icon"></i>
+              </button>
+              <button class="ft-btn delete_btn" onclick="delete_task(this)">
+                <i class="fa fa-trash"></i>
+              </button>
+              <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">
+                <i class="fa fa-edit"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description-a hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
+            modi nemo a ipsam maxime et voluptatem iusto nulla vel.
+          </div>
+        </div>
+        <div class="task">
+          <div class="title-a">
+            <div class="firstHalf">
+              <i
+                class="fa fa-square-o checkBox"
+                onclick="change_icon_state(this)"
+              ></i>
+              <div class="task-title">
+                <p>Task Title 9</p>
+                <div class="task-due-date">08/05/2024</div>
+              </div>
+            </div>
+            <div class="secondHalf">
+              <button class="desc-btn ft-btn" onclick="description_state(this)">
+                <i class="fa fa-chevron-down desc-icon"></i>
+              </button>
+              <button class="ft-btn delete_btn" onclick="delete_task(this)">
+                <i class="fa fa-trash"></i>
+              </button>
+              <button class="ft-btn edit_btn" onclick="show_dialogue_box(this)">
+                <i class="fa fa-edit"></i>
+              </button>
+            </div>
+          </div>
+          <div class="description-a hide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint
+            modi nemo a ipsam maxime et voluptatem iusto nulla vel.
+          </div>
+        </div>
         <!-- ================================================================================================================ -->
       </div>
       <button id="add_task">
@@ -85,7 +317,7 @@
 
     <!-- DIALOGUE BOX TO TAKE USER INPUT TO FILL IN THE TASK DETAILS================= -->
     <div class="dialogue-box-container hide">
-      <form >
+      <form>
         <button id="close_dialogue_box_btn">x</button>
         <p id="form-header">Task Details</p>
         <input
@@ -117,5 +349,6 @@
     <script src="dialogueBoxLogic.js"></script>
     <script src="editTask.js"></script>
     <script src="deleteTaskLogic.js"></script>
+    <script src="search_bar.js"></script>
   </body>
 </html>

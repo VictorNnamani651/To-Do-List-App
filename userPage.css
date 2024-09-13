@@ -28,12 +28,13 @@ body {
   margin: 0 auto;
   margin-top: 1%;
   box-shadow: 0.2em 0.2em 0.9em rgba(0, 0, 0, 0.26);
+  overflow-y: scroll;
 }
 
 #header {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 4vh;
+  margin-bottom: 3vh;
 }
 
 /* style for the search bar and search button======================================= */
@@ -41,9 +42,13 @@ body {
 #search-container {
   /* border: 1px solid red; */
   display: flex;
-  width: fit-content;
   margin: 0 auto;
   margin-bottom: 5vh;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  justify-content: center;
+  padding:0.4rem 0rem;
 }
 
 #search-bar {

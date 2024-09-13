@@ -41,7 +41,7 @@ close_dialgue_box_button.addEventListener("click", (evt) => {
   empty_input_boxes();
 });
 
-// function to check if all the input spaces have been filled (within the dialogue box) before submitting. [This function was created incase we use the enter key to submit the task info instead of the button on the screen]==============================================
+// function to check if all the input spaces have been filled (within the dialogue box) before submitting. [This function was created incase we use the enter key to submit the task info instead of the button on the screen] (FYI this function is referenced in the html page, search for it there if you need to)==============================================
 function check_input_spaces(event) {
   if (
     task_title.value.length > 0 &&
